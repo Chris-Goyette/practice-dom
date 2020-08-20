@@ -12,15 +12,14 @@ const addItemButton = document.querySelector('button.addItemButton');
 const removeItemButton = document.querySelector('button.removeItemButton');  
 
 
-
 // Hide/Show button
 toggleListButton.addEventListener('click', () => {
   if (listDiv.style.display == 'none') {
-    toggleListButton.textContent = 'Hide list';
-    listDiv.style.display = 'block'; 
+    toggleListButton.textContent = 'Hide list'; // On click, update button text to "Hide List"
+    listDiv.style.display = 'block'; // update webpage to display list 
   } else {
-    toggleListButton.textContent = 'Show list';                        
-    listDiv.style.display = 'none';
+    toggleListButton.textContent = 'Show list'; // On click, update button text to "Show List"                        
+    listDiv.style.display = 'none'; // update webpage to hide list 
   }                         
 });
 
